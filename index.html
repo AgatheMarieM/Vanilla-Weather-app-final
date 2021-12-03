@@ -15,9 +15,88 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello</h1>
-      <a href="" class="btn btn-primary">click</a>
+    <div class="search-engine">
+      <div class="container">
+        <form id="search-city">
+          <input type="search" placeholder="🔎 Enter a city" id="city-input" />
+          <input type="submit" value="search" />
+          <input type="submit" value="current" id="geolocation-button" />
+        </form>
+      </div>
+      <div class="today-weather">
+        <h1>Weather App</h1>
+        <h2>Saturday 3, 13:56</h2>
+        <h2>Sunny and a gentle breeze</h2>
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="https://smallimg.pngkey.com/png/small/0-3079_sun-emote-by-pomprint-my-version-of-the.png"
+              class="today-picture"
+            />
+            8°C
+          </div>
+          <div class="col-6">
+            <ul>
+              <li><strong>Wind:</strong> 16 km/h NW</li>
+              <li><strong>Rain:</strong> 0 mm</li>
+              <li><strong>Humidity:</strong> 58%</li>
+              <li><strong>Sunrise:</strong> 08:05 AM</li>
+              <li><strong>Sunset:</strong> 6:39 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="five-days">
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li>Wed 27th</li>
+              <li>☀</li>
+              <li><strong>22°</strong>/9°</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul>
+              <li>Thu 28th</li>
+              <li>⛅</li>
+              <li><strong>21°</strong>/11°</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul>
+              <li>Fri 29th</li>
+              <li>⛅</li>
+              <li><strong>20°</strong>/14°</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul>
+              <li>Sat 30th</li>
+              <li>☔</li>
+              <li><strong>18°</strong>/14°</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul>
+              <li>Sun 31st</li>
+              <li>☔</li>
+              <li><strong>18°</strong>/14°</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <small>
+        <a
+          href="https://github.com/AgatheMarieM/Vanilla-Weather-app-final"
+          target="_blank"
+          >Open source </a
+        >code by Agathe Maillol
+      </small>
     </div>
     <script src="src/app.js"></script>
   </body>

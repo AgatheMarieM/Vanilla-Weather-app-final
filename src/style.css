@@ -10,6 +10,7 @@ h2 {
   line-height: 24px;
   color: rgb(73, 73, 73);
   margin: 0 auto;
+  text-transform: capitalize;
 }
 
 ul {

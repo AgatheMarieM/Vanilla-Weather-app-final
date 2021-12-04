@@ -11,6 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -29,9 +31,9 @@
           </form>
         </div>
         <div class="today-weather">
-          <h1>Weather App</h1>
+          <h1 id="city"></h1>
           <h2>Saturday 3, 13:56</h2>
-          <h2>Sunny and a gentle breeze</h2>
+          <h2 id="description"></h2>
           <div class="row weather-data">
             <div class="col">
               <img
@@ -40,16 +42,15 @@
               />
             </div>
             <div class="col today-temp">
-              <strong>8</strong
+              <strong id="temperature"></strong
               ><span class="units">°C | <a href="#">°F</a></span>
             </div>
             <div class="col">
               <ul>
-                <li><strong>Wind:</strong> 16 km/h NW</li>
-                <li><strong>Rain:</strong> 0 mm</li>
-                <li><strong>Humidity:</strong> 58%</li>
-                <li><strong>Sunrise:</strong> 08:05 AM</li>
-                <li><strong>Sunset:</strong> 6:39 PM</li>
+                <li><strong>Wind: </strong><span id="wind"></span>km/h</li>
+                <li><strong>Humidity: </strong><span id="humidity"></span>%</li>
+                <li><strong>Sunrise: </strong> 08:05 AM</li>
+                <li><strong>Sunset: </strong> 6:39 PM</li>
               </ul>
             </div>
           </div>

@@ -27,8 +27,8 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: rgb(92, 92, 92);
+  text-decoration-line: none;
+  color: rgb(16, 0, 88)00);
   font-weight: 600;
 }
 
@@ -76,4 +76,10 @@ img {
   font-size: 20px;
   top: -16px;
   color: rgb(73, 73, 73);
+}
+
+.today-temp .active {
+  color: rgb(73, 73, 73);
+  cursor: default;
+  text-decoration: none;
 }

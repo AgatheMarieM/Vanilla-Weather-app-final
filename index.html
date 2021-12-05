@@ -20,14 +20,25 @@
     <div class="container">
       <div class="app-wrapper">
         <div class="search-engine">
-          <form id="search-city">
-            <input
-              type="search"
-              placeholder="🔎 Enter a city"
-              id="city-input"
-            />
-            <input type="submit" value="search" />
-            <input type="submit" value="current" id="geolocation-button" />
+          <form id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  autocomplete="off"
+                  placeholder="🔎 Enter a city"
+                  class="form-control"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="btn btn-light w-100"
+                />
+              </div>
+            </div>
           </form>
         </div>
         <div class="today-weather">

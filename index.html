@@ -26,6 +26,7 @@
                 <input
                   type="search"
                   autocomplete="off"
+                  autofocus="off"
                   placeholder="🔎 Enter a city"
                   class="form-control"
                   id="city-input"
@@ -50,8 +51,11 @@
               <img src="" alt="" class="today-picture" id="icon" />
             </div>
             <div class="col today-temp">
-              <strong id="temperature"></strong
-              ><span class="units">°C | <a href="#">°F</a></span>
+              <strong id="temperature"></strong>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
             </div>
             <div class="col">
               <ul>

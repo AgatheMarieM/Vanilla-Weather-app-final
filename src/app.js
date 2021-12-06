@@ -73,6 +73,20 @@ function displayCelsius(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = 
+  `<div class="row">
+  <div class="col">
+    <div class="forecast-date">Wed</div>
+      <img src="https://us.123rf.com/450wm/studiobarcelona/studiobarcelona1605/studiobarcelona160500031/56783002-ic%C3%B4ne-de-sun-.jpg?ver=6" width="25"/>
+      <div class="forecast-temperature">
+        <span class="forecast-temp-max">22°</span>/<span class="forecast-temp-min">9°</span>
+      </div>              
+  </div>            
+</div>`;
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -85,3 +99,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsius);
 
 search("Marseille");
+displayForecast() 

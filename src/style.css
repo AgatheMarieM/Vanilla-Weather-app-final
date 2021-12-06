@@ -23,7 +23,7 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(73, 73, 73);
+  
 }
 
 a {
@@ -32,28 +32,13 @@ a {
   font-weight: 600;
 }
 
-img {
-  width: 150px;
-  margin-right: 20px;
-}
 .app-wrapper {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 500px;
   margin: 0 auto;
 }
 
-.search-engine {
-  margin: 30px auto;
-}
-
-.today-weather {
-  margin: 0 auto;
-  padding: 10px 10px;
-  border: 0.5px solid rgb(221, 221, 221);
-  border-radius: 4px;
-}
-
-.five-days {
+.forecast-five-days {
   margin: 20px auto;
   padding: 5px 5px;
   border: 0.5px solid rgb(221, 221, 221);
@@ -61,8 +46,35 @@ img {
   text-align: center;
 }
 
-.weather-data {
-  margin: 20px auto;
+.forecast-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.forecast-temperature {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.forecast-temp-min {
+opacity: 0.7;
+}
+
+.search-engine {
+  margin: 30px auto;
+}
+
+.today-picture {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.today-weather {
+  margin: 0 auto;
+  padding: 10px 10px;
+  border: 0.5px solid rgb(221, 221, 221);
+  border-radius: 4px;
 }
 
 .today-temp strong {
@@ -83,3 +95,8 @@ img {
   cursor: default;
   text-decoration: none;
 }
+
+.weather-data {
+  margin: 20px auto;
+}
+

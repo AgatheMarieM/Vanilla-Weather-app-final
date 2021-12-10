@@ -83,15 +83,16 @@ function displayCelsius(event) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
-  let forecastElement = document.querySelector("#forecast");
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  console.log(response.data);
+   let forecastElement = document.querySelector("#forecast");
+   let forecast = response.data.daily; 
+
   let forecastHTML = `<div class = "row">`; 
-  days.forEach(function(day) {
+  forecast.forEach(function(forecastDay) {
     forecastHTML = forecastHTML + `
   <div class="col">
-    <div class="forecast-date">${day}</div>
-      <img src="https://us.123rf.com/450wm/studiobarcelona/studiobarcelona1605/studiobarcelona160500031/56783002-ic%C3%B4ne-de-sun-.jpg?ver=6" width="25"/>
+    <div class="forecast-date">${forecastDay.dt}</div>
+      <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="25"/>
       <div class="forecast-temperature">
         <span class="forecast-temp-max">22°</span>/<span class="forecast-temp-min">9°</span>
       </div>              

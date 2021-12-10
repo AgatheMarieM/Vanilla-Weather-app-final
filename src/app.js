@@ -82,8 +82,14 @@ function displayCelsius(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000); 
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data);
    let forecastElement = document.querySelector("#forecast");
    let forecast = response.data.daily; 
 
@@ -91,7 +97,7 @@ function displayForecast(response) {
   forecast.forEach(function(forecastDay) {
     forecastHTML = forecastHTML + `
   <div class="col">
-    <div class="forecast-date">${forecastDay.dt}</div>
+    <div class="forecast-date">${formatDay(forecastDay.dt)}</div>
       <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="25"/>
       <div class="forecast-temperature">
         <span class="forecast-temp-max">22°</span>/<span class="forecast-temp-min">9°</span>

@@ -75,16 +75,26 @@ function displayCelsius(event) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = 
-  `<div class="row">
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = `<div class = "row">`; 
+  days.forEach(function(day) {
+    forecastHTML = forecastHTML + `
   <div class="col">
-    <div class="forecast-date">Wed</div>
+    <div class="forecast-date">${day}</div>
       <img src="https://us.123rf.com/450wm/studiobarcelona/studiobarcelona1605/studiobarcelona160500031/56783002-ic%C3%B4ne-de-sun-.jpg?ver=6" width="25"/>
       <div class="forecast-temperature">
         <span class="forecast-temp-max">22°</span>/<span class="forecast-temp-min">9°</span>
       </div>              
   </div>            
-</div>`;
+`;
+  })
+
+
+
+forecastHTML = forecastHTML + `</div>`;
+
+forecastElement.innerHTML = forecastHTML;
+  
 }
 
 let form = document.querySelector("#search-form");

@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {  
-  font-size: 16px;  
+  font-size: 15px;  
   line-height: 24px;
   color:#212529de;
   margin: 0 auto;
@@ -39,6 +39,12 @@ a {
 }
 a:hover {
   color: #f03501;
+}
+
+small {
+  font-size: 12px;  
+  text-align: center;
+  display: block;
 }
 
 
@@ -86,15 +92,25 @@ a:hover {
   background: rgba(236, 111, 76, 0.705);
 }
 
-.prevision-details {   
-  font-size: 16px;
-  line-height: 24px;
-  color:#212529de;
-}
-
 .search-engine {
   margin: 100px auto 20px;;  
 }
+
+.today-details {   
+  color:#212529de;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.today-description {
+  font-size: 19px; 
+  position: relative;
+  top: 5px;
+}
+
+
 
 .today-picture {
   position: relative;
@@ -113,6 +129,11 @@ a:hover {
   font-size: 45px;
   font-weight: 500;
   line-height: 1;
+}
+
+.today-temp {
+  position: relative;
+  top: 15px;
 }
 
 .today-temp .units {

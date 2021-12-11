@@ -117,7 +117,7 @@ small {
 .today-picture {
   position: relative;
   top: -10px;
-  right: -20px;
+  right: -10px;
   width: 100px;
   margin-right: 20px;
 }

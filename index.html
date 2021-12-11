@@ -14,6 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap" rel="stylesheet">
     <title>Weather App</title>
   </head>
   <body>
@@ -35,7 +38,7 @@
                 <input
                   type="submit"
                   value="Go!"
-                  class="btn btn-light w-100"
+                  class="btn btn-outline-danger w-100 go-button"
                 />
               </div>
             </div>
@@ -44,23 +47,28 @@
         <div class="today-weather">
           <h1 id="city"></h1>
           <h2>Last updated: <span id="date"></span></h2>
-          <h2 id="description"></h2>
+          
           <div class="row weather-data">
             <div class="col">
               <img src="" alt="" class="today-picture" id="icon" />
             </div>
-            <div class="col today-temp">
+            <div class="col">
+              <div class="today-temp">
               <strong id="temperature"></strong>
               <span class="units">
                 <a href="#" id="celsius-link" class="active">°C</a> |
                 <a href="#" id="fahrenheit-link">°F</a>
               </span>
             </div>
+            </div>
             <div class="col">
-              <ul>
-                <li><strong>Wind: </strong><span id="wind"></span>km/h</li>
-                <li><strong>Humidity: </strong><span id="humidity"></span>%</li>
+              <div class="prevision-details"> 
+                <ul>
+                <li id="description"></li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
               </ul>
+            </div>             
             </div>
           </div>
         </div>

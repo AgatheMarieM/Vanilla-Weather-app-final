@@ -1,17 +1,16 @@
 body {
-  background: #ffe3ffa4;
+  background: #ffe3ff8a;
   
 }
 
 h1 {
   font-size: 25px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif; 
   line-height: 35px;
-  color: #EC6E4C;
+  color: rgb(236, 110, 76);
   margin: 0 auto;
 }
 
-h2 {
+h2 {  
   font-size: 16px;
   line-height: 24px;
   color:#212529de;
@@ -42,24 +41,29 @@ a:hover {
 }
 
 .app-wrapper {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.go-button, .forecast-five-days, .form-control, .today-weather  {
+  background: rgb(255, 255, 255);
+  border: 0px solid rgb(221, 221, 221);
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(236, 110, 76, 0.594);
+}
+
+.app-wrapper {
   max-width: 500px;
   margin: 0 auto;
 }
 
-.forecast-five-days {
-  background:  rgb(252, 252, 252);
-  box-shadow: 2px 2px 2px rgba(34, 34, 34, 0.596);
+.forecast-five-days {    
   margin: 20px auto;
-  padding: 5px 5px;
-  border: 0px solid rgb(221, 221, 221);
-  border-radius: 4px;
+  padding: 5px 5px;  
   text-align: center;
 }
 
 .forecast-date {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;  
   color: rgb(0, 0, 0);
 }
 
@@ -69,27 +73,38 @@ a:hover {
 }
 
 .forecast-temp-min {
-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.form-control {
+  color:#212529de;
+}
+
+.go-button:hover {
+  background: rgba(236, 111, 76, 0.705);
+}
+
+.prevision-details {   
+  font-size: 16px;
+  line-height: 24px;
+  color:#212529de;
 }
 
 .search-engine {
-  margin: 50px auto;
-  
+  margin: 50px auto;  
 }
 
 .today-picture {
-  width: 150px;
+  position: relative;
+  top: -10px;
+  width: 100px;
   margin-right: 20px;
 }
 
-.today-weather {
-  background: rgb(252, 252, 252);
-  box-shadow: 2px 2px 2px rgba(34, 34, 34, 0.596);
+.today-weather {    
   margin: 0 auto;
   padding: 10px 10px;
-  border: 0px solid rgb(221, 221, 221);
-  border-radius: 4px;
-}
+  }
 
 .today-temp strong {
   font-size: 45px;
@@ -99,7 +114,7 @@ opacity: 0.7;
 
 .today-temp .units {
   position: relative;
-  font-size: 20px;
+  font-size: 15px;
   top: -16px;
   color: rgb(73, 73, 73);
 }
@@ -114,3 +129,6 @@ opacity: 0.7;
   margin: 20px auto;
 }
 
+#description:first-letter {
+  text-transform: capitalize;
+}

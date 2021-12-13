@@ -60,8 +60,13 @@ small {
 }
 
 .app-wrapper {
-  max-width: 480px;
+  max-width: 500px;
   margin: 0 auto;
+}
+
+.forecast-date {
+  font-size: 14px;  
+  color: rgb(0, 0, 0);
 }
 
 .forecast-five-days {    
@@ -70,9 +75,8 @@ small {
   text-align: center;
 }
 
-.forecast-date {
-  font-size: 14px;  
-  color: rgb(0, 0, 0);
+.forecast-icon {
+  width: 70px;
 }
 
 .forecast-temperature {
@@ -86,9 +90,6 @@ small {
 
 .form-control, .go-button {
   font-size: 15px;
-}
-
-.form-control, .go-button {
   color:rgba(236, 111, 76, 0.871);
 }
 
@@ -105,11 +106,12 @@ small {
   font-size: 14px;
   line-height: 20px;
   position: relative;
-  top: 5px;
+  top: 12px;
 }
 
 .today-description {
   font-size: 19px; 
+  line-height: 19px;
   position: relative;
   top: 5px;
 }
@@ -117,7 +119,7 @@ small {
 .today-icon {
   position: relative;
   top: -10px;
-  right: -10px;
+  right: -20px;
   width: 100px;
  }
 
@@ -158,7 +160,6 @@ small {
 
 @media (max-width: 480px) {
 .search-engine {
-  margin: 10px auto 20px;;  
+  margin: 20px auto 20px;  
 }
-
 }

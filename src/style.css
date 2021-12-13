@@ -127,20 +127,17 @@ small {
   }
 
 .today-temp strong {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 1;
-}
-
-.today-temp {
   position: relative;
   top: 15px;
 }
 
-.today-temp .units {
+.units {
   position: relative;
-  font-size: 15px;
-  top: -16px;
+  font-size: 12px;
+  top: -2px;
   color: rgb(73, 73, 73);
 }
 
@@ -148,6 +145,10 @@ small {
   color: rgb(73, 73, 73);
   cursor: default;
   text-decoration: none;
+}
+
+.weather-data {
+  margin-top: 10px;
 }
 
 #description:first-letter {

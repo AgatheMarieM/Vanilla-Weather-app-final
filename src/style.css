@@ -60,7 +60,7 @@ small {
 }
 
 .app-wrapper {
-  max-width: 500px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -114,17 +114,16 @@ small {
   top: 5px;
 }
 
-.today-picture {
+.today-icon {
   position: relative;
   top: -10px;
   right: -10px;
   width: 100px;
-  margin-right: 20px;
-}
+ }
 
 .today-weather {    
   margin: 0 auto;  
-  padding: 20px 20px 2px;
+  padding: 20px 20px;
   }
 
 .today-temp strong {
@@ -151,10 +150,8 @@ small {
   text-decoration: none;
 }
 
-.weather-data {
-  margin: 20px auto;
-}
-
 #description:first-letter {
   text-transform: capitalize;
 }
+
+

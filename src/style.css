@@ -76,7 +76,7 @@ small {
 }
 
 .forecast-icon {
-  width: 70px;
+  width: 60px;
 }
 
 .forecast-temperature {
@@ -161,5 +161,5 @@ small {
 @media (max-width: 480px) {
 .search-engine {
   margin: 20px auto 20px;  
-}
-}
+};
+};

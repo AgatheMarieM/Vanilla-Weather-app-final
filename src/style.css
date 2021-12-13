@@ -45,8 +45,8 @@ small {
   font-size: 12px;  
   text-align: center;
   display: block;
+  margin-bottom: 10px;
 }
-
 
 .app-wrapper {
   font-family: 'Roboto Mono', monospace;
@@ -81,7 +81,7 @@ small {
 }
 
 .forecast-temp-min {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .form-control, .go-button {
@@ -97,7 +97,7 @@ small {
 }
 
 .search-engine {
-  margin: 100px auto 20px;;  
+  margin: 80px auto 20px;;  
 }
 
 .today-details {   
@@ -156,3 +156,9 @@ small {
 }
 
 
+@media (max-width: 480px) {
+.search-engine {
+  margin: 10px auto 20px;;  
+}
+
+}
